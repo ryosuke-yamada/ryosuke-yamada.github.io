@@ -17,89 +17,42 @@
     gtag('config', 'G-QP8ZKJ197V');
   </script>
 
-  <style>
-    body {
-      margin: 40px auto;
-      padding: 0 20px;
-      max-width: 900px;
-      font-family: 'Lato', sans-serif;
-      font-weight: 300;
-      font-size: 1rem;
-      line-height: 1.6;
-      background: #fff;
-      color: #000;
-    }
-    h1 {
-      font-size: 32px;
-      font-weight: 700;
-      margin-bottom: 0;
-    }
-    h2 {
-      font-size: 22px;
-      font-weight: 700;
-      color: #333;
-    }
-    a {
-      color: #1367a7;
-      text-decoration: none;
-    }
-    p {
-      margin: 0 0 1em;
-    }
-    #personal_info {
-      display: flex;
-      align-items: center;
-      gap: 20px;
-    }
-    .photo_of_me {
-      width: 180px;
-      border: 1px solid #000;
-      border-radius: 16px;
-    }
-    #DocInfo {
-      color: #888;
-      font-size: 1rem;
-    }
-    .section_div {
-      margin-top: 40px;
-    }
-    ul {
-      padding-left: 20px;
-    }
-    li {
-      margin-bottom: 10px;
-    }
-  </style>
+  <link rel="stylesheet" href="mystyle.css">
 </head>
 
 <body>
   <div id="container">
     <div class="section_div">
-      <div id="personal_info">
-        <img class="photo_of_me" src="images/me.png" alt="Profile Photo">
-        <div>
-          <h1>Ryosuke Yamada</h1>
-          <div id="DocInfo">
-            ryosuke.yamada [at] aist.go.jp<br>
-            <a href="https://scholar.google.com/citations?user=2nmJ6qQAAAAJ&hl=ja">Google Scholar</a> /
-            <a href="https://github.com/ryosuke-yamada">GitHub</a> /
-            <a href="ja/index.html">Japanese</a>
-          </div>
-        </div>
-      </div>
+      <table id="personal_info">
+        <tr>
+          <td><img class="photo_of_me" src="images/me.png" width="180px" style="border: 1px solid black; float:left; margin-right:15px" alt="Profile Photo"></td>
+          <td>
+            <div id="DocInfo">
+              <h1>Ryosuke Yamada</h1>
+              ryosuke.yamada [at] aist.go.jp<br>
+              <a href="https://scholar.google.com/citations?user=2nmJ6qQAAAAJ&hl=ja">Google Scholar</a> /
+              <a href="https://github.com/ryosuke-yamada">GitHub</a> /
+              <a href="ja/index.html">Japanese</a>
+            </div><br>
+          </td>
+        </tr>
+      </table>
     </div>
 
     <div class="section_div">
       <h2>About Me</h2>
-      <p>I am a Ph.D. student at the University of Tsukuba, working with Hirokatsu Kataoka in AIST and cvpaper.challenge.<br>
-      My interests lie broadly at the intersection of deep learning, computer vision, and robotics, with a focus on 3D object recognition.<br>
-      In my research, I tackle ways in which the automatic construction of a large-scale 3D dataset is based on formula-driven supervised learning.</p>
-      <p>Quick links:
-        <a href="#publications">Publications</a> /
-        <a href="#news">News</a> /
-        <a href="#teaching">Teaching</a>
+      <p>
+        I am a Ph.D. student at the University of Tsukuba, working with Hirokatsu Kataoka in AIST and cvpaper.challenge.<br>
+        My interests lie broadly at the intersection of deep learning, computer vision, and robotics, with a focus on 3D object recognition.<br>
+        In my research, I tackle ways in which the automatic construction of a large-scale 3D dataset is based on formula-driven supervised learning.
       </p>
+      Quick links:
+      <a href="#publications">Publications</a> /
+      <a href="#news">News</a> /
+      <a href="#teaching">Teaching</a>
+      <br><br>
     </div>
+    <hr>
 
     <div class="section_div" id="news">
       <h2>⭐ News</h2>
@@ -108,6 +61,7 @@
         <li>📄 2024.10: Paper accepted to ECCV 2024!</li>
       </ul>
     </div>
+    <hr>
 
     <div class="section_div" id="publications">
       <h2>Publications</h2>
@@ -124,18 +78,20 @@
         </li>
       </ul>
     </div>
+    <hr>
 
     <div class="section_div" id="teaching">
       <h2>Teaching</h2>
       <p>TA: Computer Vision, 2023–2024</p>
     </div>
+    <hr>
 
     <div class="section_div" id="misc">
       <h2>Misc</h2>
       <p><a href="#">[Slides & Talks]</a> / <a href="#">[Writing]</a></p>
     </div>
-
     <hr>
+
     <center><a href="http://accessibility.mit.edu/">Accessibility</a></center>
   </div>
 </body>

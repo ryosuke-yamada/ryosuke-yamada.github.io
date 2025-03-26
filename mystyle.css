@@ -1,0 +1,237 @@
+body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: "Lato", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+    background-color: #FFF;
+  }
+  
+  hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+  }
+  
+  table {
+    padding: 5px;
+  }
+  
+  table.pub_table {
+    border-collapse: collapse;
+    border-bottom: 0 solid #9B9B9B;
+    padding: 10px;
+    width: 100%;
+    max-width: 1100px;
+  }
+  
+  td.pub_td1,
+  td.pub_td2 {
+    border-collapse: collapse;
+    padding: 10px;
+    max-width: 1100px;
+  }
+  
+  td.year_heading {
+    color: #3B3B3B;
+    font-weight: 700;
+    font-size: 1.3rem;
+  }
+  
+  tr {
+    background-color: #FFF;
+  }
+  
+  /* Container */
+  div#container {
+    margin: 0 auto;
+    max-width: 1200px;
+    width: 100%;
+    padding: 0 10px;
+    text-align: left;
+    position: relative;
+    background-color: #FFF;
+  }
+  
+  /* Document info */
+  div#DocInfo {
+    color: #9B9B9B;
+    height: 128px;
+    font-size: 1rem;
+  }
+  
+  /* Headings */
+  h1, h2, h3, h4 {
+    color: #3B3B3B;
+  }
+  
+  h2 {
+    font-size: 1.3rem;
+  }
+  
+  /* Paragraphs */
+  p {
+    color: #000;
+    margin-bottom: 20px;
+  }
+  
+  p.caption {
+    color: #9B9B9B;
+    text-align: left;
+    max-width: 600px;
+    width: 100%;
+    font: 1rem helvetica, sans-serif;
+  }
+  
+  p.caption2 {
+    color: #9B9B9B;
+    text-align: left;
+    max-width: 800px;
+    width: 100%;
+    font: 1rem helvetica, sans-serif;
+  }
+  
+  /* Header image */
+  #header_img {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  
+  /* Links */
+  a:link,
+  a:visited {
+    color: #1367a7;
+    text-decoration: none;
+  }
+  
+  /* Section divisions */
+  .section_div {
+    background-color: #FFF;
+    padding: 10px;
+    margin: 10px;
+    /* border: 1px solid #AAA; */
+  }
+  
+  /* Personal info */
+  #personal_info {
+    background-color: #FFF;
+    font-size: 1rem;
+  }
+  
+  /* Announcements */
+  p.announcement {
+    padding: 10px;
+    background-color: #EEE;
+  }
+  
+  /* Images */
+  img.teaser_img {
+    width: 256px;
+    max-width: 100%;
+    display: block;
+    margin: 5px auto;
+    border: 0;
+  }
+  
+  img.teaser_img2 {
+    width: 206px;
+    max-width: 100%;
+    display: block;
+    margin: 5px auto;
+    border: 0;
+  }
+  
+  img.teaser_img3 {
+    width: 186px;
+    max-width: 100%;
+    display: block;
+    margin: 5px auto;
+    border: 0;
+  }
+  
+  img.photo_of_me {
+    border-radius: 20px;
+  }
+  
+  /* Teaser image container */
+  div.teaser_img_div {
+    max-width: 286px;
+    width: 100%;
+  }
+  
+  /* Personnel table */
+  table.personnel td {
+    padding: 16px;
+    vertical-align: top;
+  }
+  
+  /* Research agenda list */
+  p.research_agenda_list {
+    margin: 5px;
+  }
+  
+  .expandable-text {
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+    cursor: pointer;
+  }
+  
+  /* Responsive adjustments for smaller screens */
+  @media only screen and (max-width: 768px) {
+  
+      body {
+        font-weight: 300;
+        font-size: 0.75rem;
+      }
+  
+    #container {
+      width: 100%;
+      padding: 10px;
+    }
+  
+    table.pub_table {
+      width: 100%;
+      padding: 10px;
+    }
+  
+    td.pub_td2 {
+      width: 100%;
+    }
+  
+      td.pub_td1 {
+          width: 40%;
+      }
+  
+    div#DocInfo {
+      height: auto;
+    }
+  
+    p.caption,
+    p.caption2 {
+      width: 100%;
+    }
+  
+      table.vertical-on-mobile,
+    table.vertical-on-mobile tr,
+    table.vertical-on-mobile td {
+      display: block;
+      width: 100%;
+    }
+  
+    table.vertical-on-mobile tr {
+      margin-bottom: 1rem;
+    }
+  
+    table.vertical-on-mobile td {
+      width: auto !important;
+    }
+  
+    /* New rule to center the image and set it to half the container's width */
+    table.vertical-on-mobile td img {
+      width: 50% !important;
+      display: block;
+      margin: 0 auto;
+    }
+  }
